@@ -118,3 +118,11 @@ body {
 .content .section .form button:hover {
     transform: scale(1.1);
 }
+
+
+/* class added using javascript */
+
+
+.error {
+    border: 1px solid red;
+}

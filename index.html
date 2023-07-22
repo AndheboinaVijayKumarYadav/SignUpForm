@@ -6,6 +6,7 @@
     <title>SignUpForm</title>
 
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main class="content">
@@ -18,17 +19,19 @@
     <section class="section">
 
                 <button class="free-btn">Try it free 7 days then $20/mo. thereafter</button>
-            <form action="" class="form">
 
-                    <input type="text" id="first_name" required placeholder="First Name"  required/>
-                
-                    <input type="text" id="last_name" required placeholder="Last Name"  required/>
-                
-                    <input type="email" id="user_email" required placeholder="Email Address" required/>
-                
-                    <input type="password" id="user_password" required placeholder="Password"  required/>
+                <!-- form -->
+            <form action="" class="form" id="form">
 
-                    <button type="submit">CLAIM YOUR FREE TRAIL</button>
+                    <input type="text" class="first_name" id="first_name" placeholder="First Name"  required/>
+                
+                    <input type="text" class="last_name"  id="last_name"  placeholder="Last Name"/>
+                
+                    <input type="email" class="user_email" id="user_email" placeholder="@gmail.com is compulsory" required/>
+                
+                    <input type="password" class="user_password" id="user_password" placeholder="at least 8 characters" required/>
+
+                    <button type="submit" id="submit">CLAIM YOUR FREE TRAIL</button>
                     <p>By clicking the button, you are agreeing to our <a href="">Terms and Services</a>
                     </p>
                    
