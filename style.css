@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Custom Properties*/
+:root{
+    --red: hsl(0, 100%, 74%) ;
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --dark-blue: hsl(249, 10%, 26%) ;
+    --grey-blue: hsl(246, 25%, 77%);
+
+}
+
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body {
+    background-image: url('./images/bg-intro-desktop.png');
+    background-color: var(--red);
+    color:white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    max-width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.content .header {
+    width: 400px;
+    padding: 10px;
+    line-height: 2rem;
+}
+
+.content .header p {
+    font-size: 0.7rem;
+    margin-top: 20px;
+    line-height: 1rem;
+}
+
+.content .section {
+    width: 500px;
+}
+
+.content .section .free-btn {
+    background-color: var(--blue);
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: white;
+    box-shadow: 0px 5px 2px var(--dark-blue);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.content .section .free-btn:hover {
+    transform: scale(1.05);
+}
+
+.content .section .form {
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.content .section .form > input {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 1rem;
+
+}
+.content .section .form > input:focus {
+    outline: none;
+}
+
+.content .section .form button{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    outline: none;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.content .section .form p {
+    font-size: 0.5rem;
+    color: var(--grey-blue);
+    text-align: center;
+}
+.content .section .form p a {
+    color: var(--red);
+}
+
+.content .section .form button:hover {
+    transform: scale(1.1);
+}
